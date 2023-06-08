@@ -12,6 +12,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        @media screen and (max-width: 600px) {
+
+        body {
+            font-size: 14pt;
+        }
+
+        .contact-section {
+            flex-direction: column;
+        }
+
+        .agent-contact,
+        .office-contact {
+            flex-basis: 100%;
+            margin-bottom: 10px;
+        }
+
+        .agent-contact:hover,
+        .office-contact:hover {
+            transform: scale(1.0); /* Disable pop-out effect on mobile */
+        }
+
+        .agent-contact h3,
+        .office-contact h3 {
+            font-size: 18px;
+        }
+
+        .agent-contact a,
+        .office-contact p {
+            font-size: 14px;
+        }
+
+        .agents-section,
+        .office-section {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .office-contact {
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 16pt;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 20px 0;
+        }
+
+        .nav-links ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-links ul li {
+            margin-bottom: 10px;
+        }
+    }
         body {
             margin: 0;
             padding: 0;
