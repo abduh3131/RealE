@@ -37,6 +37,26 @@
     body {
         font-size: 16px;
     }
+    .agents-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .agent-contact {
+        flex-basis: 45%; /* adjust this value as needed, it represents the width of each card */
+        margin-bottom: 20px;
+    }
+}
+This will make the "agent-contact" divs appear side by side on screens that are less than or equal to 600px wide. The flex-basis property is set to 45% to allow for some spacing between the cards, but you can adjust this value as needed.
+
+Again, keep in mind that this might not look good on smaller screens if your agent contact cards have a lot of content or large text.
+
+
+
+
+
+
+
 
     .headshot {
         width: 50%;
