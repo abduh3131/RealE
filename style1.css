@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+html {
+    overflow-x: hidden;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    background-image: url("bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 130vh;
+    font-size: 32px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+}
+
+a {
+    background-color: rgb(210, 47, 37);
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+}
+a:hover{
+    background-color:rgb (210,47,40);
+}
+
+    header h1 {
+        margin: 0;
+    }
+
+    header p {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1px 0;
+    position: absaloute;
+    top: 0;
+    z-index: 999;
+}
+
+    .navbar .site-title {
+        margin-left: 10px;
+        color: white;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+        .navbar .nav-links a {
+            color: white;
+            margin: 0 15px; /* Adjust values as needed */
+            text-decoration: none;
+        }
+
+        .navbar .nav-links ul {
+            list-style: none; /* This removes the bullet points */
+            padding: 0;
+            display: flex; /* This puts the list items in a row */
+            justify-content: space-evenly; /* This distributes the list items evenly */
+        }
+
+            .navbar .nav-links ul li {
+                margin: 0 1px; /* This adds some space between the list items */
+            }
+
+                .navbar .nav-links ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                    .navbar .nav-links ul li a.active {
+                        border-bottom: 1px solid white; /* adjust as needed */
+                    }
