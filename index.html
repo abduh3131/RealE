@@ -13,104 +13,81 @@
 <style>
     body {
         text-align: center;
-        font-style:normal;
-        
+        font-style: normal;
     }
-    .headshot{
-        width:25%;
-        height:25%;
-        border: solid 1px;
-    }
-    p{
-        font-size:14pt;
-        font-style:normal;
-    }
-
-
-
-
-</style>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
-    }
-    .agents-section {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .agent-contact {
-        flex-basis: 45%; /* adjust this value as needed, it represents the width of each card */
-        margin-bottom: 20px;
-    }
-}
-This will make the "agent-contact" divs appear side by side on screens that are less than or equal to 600px wide. The flex-basis property is set to 45% to allow for some spacing between the cards, but you can adjust this value as needed.
-
-Again, keep in mind that this might not look good on smaller screens if your agent contact cards have a lot of content or large text.
-
-
-
-
-
-
-
 
     .headshot {
-        width: 50%;
-        height: 50%;
+        width: 25%;
+        height: 25%;
+        border: solid 1px;
     }
 
     p {
-        font-size: 16px;
-    }
-
-    .nav-links ul li {
         font-size: 14pt;
+        font-style: normal;
     }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    h1 {
-        font-size: 36pt;
-    }
+<style>
+    @media screen and (max-width: 600px) {
+        body {
+            font-size: 16px;
+        }
 
-    p {
-        font-size: 20pt;
-    }
+        .headshot {
+            width: 50%;
+            height: 50%;
+        }
 
-    .site-title h1 {
-        font-size: 24pt;
-    }
+        p {
+            font-size: 16px;
+        }
 
-    #mt {
-        flex-direction: column;
-    }
+        .nav-links ul li {
+            font-size: 14pt;
+        }
 
-    #mt article {
-        width: 100%;
-    }
+        h1 {
+            font-size: 36pt;
+        }
 
-    #ses {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
+        p {
+            font-size: 20pt;
+        }
 
-    .rl-image {
-        flex: 1 0 100%;
-        max-width: 100%;
-    }
+        .site-title h1 {
+            font-size: 24pt;
+        }
 
-    .rl-text {
-        flex: 1 0 100%;
+        #mt {
+            flex-direction: column;
+        }
+
+            #mt article {
+                width: 100%;
+            }
+
+        #ses {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+        }
+
+        .rl-image {
+            flex: 1 0 100%;
+            max-width: 100%;
+        }
+
+        .rl-text {
+            flex: 1 0 100%;
+        }
     }
-}
 </style>
 
 <body>
 
 
- 
+
 
 
 
@@ -234,17 +211,8 @@ Again, keep in mind that this might not look good on smaller screens if your age
                     <img id="headshot" src="m.jpg" alt="Mahmoud">
                     <h3>Mahmoud Al-Ajeal</h3>
                     <div class="bio">
-                        <p class="short-bio">Mahmoud is a highly skilled real estate agent in Durham region, renowned for his expertise in home and investment properties. 
-                            As a top-class legal practitioner, he handles complex tasks including leases, rentals, and buy-sell transactions with ease. His in-depth knowledge 
-                            of property 
-                            laws and genuine dedication to his clients make him an invaluable </p>
-                        
-                        <p class="long-bio hidden">Mahmoud is a highly skilled real estate agent in Durham region, renowned for his expertise in home and investment properties. 
-                            As a top-class legal practitioner, he handles complex tasks including leases, rentals, and buy-sell transactions with ease. His in-depth knowledge 
-                            of property laws
-                            and genuine dedication to his clients make him an invaluable asset. Mahmoud's comprehensive understanding of the local market dynamics, 
-                            combined with his strong legal acumen, ensures smooth and successful property deals. Count on Mahmoud to guide you 
-                            confidently through your real estate journey.</p>
+                        <p class="short-bio">Mahmoud is a highly skilled real estate agent in Durham region, renowned for his expertise in home and investment properties. As a top-class paralegal, he handles complex tasks including leases, rentals, and buy-sell transactions with ease. His in-depth knowledge of property laws and genuine dedication to his clients make him an invaluable </p>
+                        <p class="long-bio hidden">Mahmoud is a highly skilled real estate agent in Durham region, renowned for his expertise in home and investment properties. As a top-class paralegal, he handles complex tasks including leases, rentals, and buy-sell transactions with ease. His in-depth knowledge of property laws and genuine dedication to his clients make him an invaluable asset. Mahmoud's comprehensive understanding of the local market dynamics, combined with his strong legal acumen, ensures smooth and successful property deals. Count on Mahmoud to guide you confidently through your real estate journey.</p>
                     </div>
                     <button class="show-more" onclick="showMore('mahmoud')">Show more</button>
 
