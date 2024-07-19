@@ -7,99 +7,231 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Banne Al-Ajeal and Mahmoud Al-Ajeal are expert real estate agents with Royal LePage, offering personalized services to home buyers and sellers in Ontario, Canada. Contact them today to get started with your real estate journey.">
-<link rel="icon" href="dd.png">
-
-</head>
-<style>
+    <meta name="description" content="Banne Al-Ajeal and Mahmoud Al-Ajeal are expert real estate agents with Royal LePage, offering personalized services to home buyers and sellers in Ontario, Canada. Contact them today to get started with your real estate journey.">
+    <link rel="icon" href="dd.png">
+    <style>
     body {
-        text-align: center;
-        font-style: normal;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+.site-title h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+h1, h3 {
+    margin: 10px 0;
+}
+
+section {
+    margin: 20px 0;
+}
+
+article {
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#mt {
+    display: flex;
+    justify-content: space-around;
+}
+
+#mt article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mt img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#mt h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#mt p {
+    text-align: justify;
+}
+
+#ses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.image-cell {
+    width: 100%;
+}
+
+.text-cell {
+    padding: 20px;
+}
+
+#rl {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.rl-image {
+    flex: 1 0 30%;
+    max-width: 10%;
+}
+
+.rl-text {
+    flex: 1 0 70%;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
     }
 
     .headshot {
-        width: 25%;
-        height: 25%;
-        border: solid 1px;
+        width: 50%;
+        height: 50%;
     }
 
-    p {
-        font-size: 14pt;
-        font-style: normal;
+    .nav-links ul li {
+        display: block;
+        margin: 5px 0;
     }
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-    @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .site-title h1 {
+        font-size: 24pt;
+    }
+
+    #mt {
+        flex-direction: column;
+    }
+
+    #mt article {
+        width: 100%;
+    }
+
+    #ses {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .rl-image {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+
+    .rl-text {
+        flex: 1 0 100%;
+    }
+}
         body {
-            font-size: 16px;
+            text-align: center;
+            font-style: normal;
         }
 
         .headshot {
-            width: 50%;
-            height: 50%;
+            width: 25%;
+            height: 25%;
+            border: solid 1px;
         }
 
         p {
-            font-size: 16px;
-        }
-
-        .nav-links ul li {
             font-size: 14pt;
+            font-style: normal;
         }
 
-        h1 {
-            font-size: 36pt;
-        }
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 16px;
+            }
 
-        p {
-            font-size: 20pt;
-        }
+            .headshot {
+                width: 50%;
+                height: 50%;
+            }
 
-        .site-title h1 {
-            font-size: 24pt;
-        }
+            p {
+                font-size: 16px;
+            }
 
-        #mt {
-            flex-direction: column;
-        }
+            .nav-links ul li {
+                font-size: 14pt;
+            }
+
+            h1 {
+                font-size: 36pt;
+            }
+
+            p {
+                font-size: 20pt;
+            }
+
+            .site-title h1 {
+                font-size: 24pt;
+            }
+
+            #mt {
+                flex-direction: column;
+            }
 
             #mt article {
                 width: 100%;
             }
 
-        #ses {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 1fr);
-        }
+            #ses {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+            }
 
-        .rl-image {
-            flex: 1 0 100%;
-            max-width: 100%;
-        }
+            .rl-image {
+                flex: 1 0 100%;
+                max-width: 100%;
+            }
 
-        .rl-text {
-            flex: 1 0 100%;
+            .rl-text {
+                flex: 1 0 100%;
+            }
         }
-    }
-</style>
-
+    </style>
+</head>
 <body>
-
-
-
-
-
-
     <header>
-
-
-
-
-
         <nav class="navbar">
-
             <div class="nav-links">
                 <ul>
                     <li><a class="active" style="background-color:transparent; font-size:16pt;" href="#welcome">Home</a></li>
@@ -112,22 +244,15 @@
         <div class="site-title">
             <h1>AL - AJEAL</h1>
         </div>
-
-
-
         <div style="margin-top:10%">
             <h1 style="font-size:48pt;">Only the Best Deals</h1>
             <hr style=" width: 60%; border: 0;  border-top: 1px solid white; color:white;" />
             <p style="font-size:28pt;">We make real estate a breeze!</p>
         </div>
-
         <div style="margin:10px; margin-top:3%">
             <a style="font-size:large" href="listings.html">See Listings</a>
         </div>
-
     </header>
-
-
     <main>
         <section>
             <div id="welcome">
@@ -136,57 +261,9 @@
             </div>
         </section>
         <hr style="width:80%; margin-top:5%; margin-bottom:5%;" />
-
-        <style>
-            h1 {
-                font-size: 18pt;
-            }
-
-            #mt {
-                display: flex;
-                justify-content: space-around;
-            }
-
-                #mt article {
-                    width: 40%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-
-                #mt img {
-                    display: block;
-                    width: 100%;
-                    height: auto;
-                    border-radius: 50%;
-                }
-
-                #mt h3 {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    text-align: center;
-                }
-
-                #mt p {
-                    text-align: justify;
-                }
-
-            #show-more {
-            }
-
-            #mt img {
-                transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            }
-
-                #mt img:hover {
-                    transform: scale(1.05) translateY(-10px);
-                    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-                }
-        </style>
         <h1>Meet the Team</h1>
         <section style="margin:10%; margin-left:15%; margin-right:15%;">
             <div id="mt">
-
                 <article>
                     <img id="headshot" src="b.jpg" alt="Banne">
                     <h3>Banne Al-Ajeal</h3>
@@ -196,7 +273,6 @@
                             Her insight into high-quality homes and promising investments is unmatched. Drawing from her tech background,
                             she adeptly navigates modern real estate tools and data analytics. Whether you're a first-time buyer or experienced investor, rely on
                         </p>
-
                         <p class="long-bio hidden">
                             Meet Banne, a seasoned real estate expert in Durham, previously a top-notch computer engineer.
                             Her insight into high-quality homes and promising investments is unmatched. Drawing from her tech background,
@@ -205,9 +281,7 @@
                         </p>
                     </div>
                     <button class="show-more" onclick="showMore('banne')">Show more</button>
-
                 </article>
-
                 <article>
                     <img id="headshot" src="IMG_1875.jpeg" alt="Mahmoud">
                     <h3>Mahmoud Al-Ajeal</h3>
@@ -216,43 +290,12 @@
                         <p class="long-bio hidden">Mahmoud is a highly skilled real estate agent in Durham region, renowned for his expertise in home and investment properties. As a top-class legal practitioner, he handles complex tasks including leases, rentals, and buy-sell transactions with ease. His in-depth knowledge of property laws and genuine dedication to his clients make him an invaluable asset. Mahmoud's comprehensive understanding of the local market dynamics, combined with his strong legal acumen, ensures smooth and successful property deals. Count on Mahmoud to guide you confidently through your real estate journey.</p>
                     </div>
                     <button class="show-more" onclick="showMore('mahmoud')">Show more</button>
-
                 </article>
-
             </div>
         </section>
-
         <a id="contact-button" href="contact.html">Contact</a>
-
         <hr style="width:80%; margin-top:5%; margin-bottom:5%;" />
         <h1 style="margin:10%">Our Services</h1>
-
-
-        <style>
-            .hidden {
-                display: none;
-            }
-
-            #ses {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                gap: 5px; /* Reduced gap size */
-            }
-
-            .image-cell {
-                width: 100%;
-            }
-
-            .text-cell {
-                padding: 20px;
-            }
-
-            h3 {
-                margin-bottom: 10px;
-            }
-        </style>
-
         <section id="ses">
             <div class="image-cell">
                 <img id="sss" src="kit.jpg" alt="Real Estate Done Right">
@@ -276,152 +319,78 @@
                 <p>If you have questions about affordability, credit, legal matters, or income, trust us to find you what you need fast. We make sure you feel confident and educated every step of the way.</p>
             </div>
         </section>
-
-
         <hr style="width:80%; margin-top:5%; margin-bottom:5%;" />
+        <img src="rl.png" alt="Royal LePage logo" class="rl-image“>
 
-        <img src="rl.png" alt="Royal LePage logo" class="rl-image">
-        <div id="rl">
 
-            <div class="rl-text" style="margin-left:10%; margin-right:10%;">
-                <h2>Our Experience at Royal LePage</h2>
-                <p>As agents at Royal LePage, we're part of a dynamic and supportive community that encourages us to excel. Here, we're empowered with the tools, training, and resources necessary to help our clients navigate the often complex real estate landscape. We find immense satisfaction in guiding home buyers and sellers through one of the most significant transactions of their lives, providing expert advice and personalized service every step of the way.</p>
-                <p>At Royal LePage, we're more than just real estate agents—we're trusted advisors. Our commitment to professionalism, integrity, and exceptional customer service is at the heart of everything we do. Being part of the Royal LePage team means we're backed by one of the strongest brands in Canada's real estate industry, which gives us, and in turn our clients, a distinct advantage.</p>
-            </div>
-        </div>
+Our Experience at Royal LePage
+As agents at Royal LePage, we’re part of a dynamic and supportive community that encourages us to excel. Here, we’re empowered with the tools, training, and resources necessary to help our clients navigate the often complex real estate landscape. We find immense satisfaction in guiding home buyers and sellers through one of the most significant transactions of their lives, providing expert advice and personalized service every step of the way.
+At Royal LePage, we’re more than just real estate agents—we’re trusted advisors. Our commitment to professionalism, integrity, and exceptional customer service is at the heart of everything we do. Being part of the Royal LePage team means we’re backed by one of the strongest brands in Canada’s real estate industry, which gives us, and in turn our clients, a distinct advantage.
 
 
 
-        <style>
-            #rl {
-                display: flex;
-                align-items: start;
-                gap: 20px; /* adjust as needed */
-            }
 
-            .rl-image {
-                flex: 1 0 30%; /* adjust as needed */
-                max-width: 10%;
-            }
+Copyright © 2023 Al-Ajeal Team - All Rights Reserved.
 
-            .rl-text {
-                flex: 1 0 70%; /* adjust as needed */
-            }
-        </style>
-
-    </main>
+@Abdullah.Hanoosh
 
 
 
-    <footer>
-        <p>Copyright © 2023 Al-Ajeal Team - All Rights Reserved.</p>
-        <section>
-            <p>@Abdullah.Hanoosh</p>
-        </section>
-    </footer>
-
-    <script>
-        // Your JavaScript code here
-
-        // Get all "Show more" buttons
-        var buttons = document.getElementsByClassName("show-more");
-
-        // Add click event listener to each button
-        for (let button of buttons) {
-            button.addEventListener('click', function () {
-                var longBio = this.previousElementSibling.getElementsByClassName("long-bio")[0];
-                var shortBio = this.previousElementSibling.getElementsByClassName("short-bio")[0];
-                if (longBio.classList.contains('hidden')) {
-                    // If long bio is hidden, show it and hide short bio
-                    longBio.classList.remove('hidden');
-                    shortBio.classList.add('hidden');
-                    this.innerText = 'Show less';
-                } else {
-                    // If long bio is visible, hide it and show short bio
-                    longBio.classList.add('hidden');
-                    shortBio.classList.remove('hidden');
-                    this.innerText = 'Show more';
-                }
-            });
-        }
-    </script>
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('a[href^="#"]').on('click', function (event) {
-                event.preventDefault();
-                var target = $(this.getAttribute('href'));
-                if (target.length) {
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                }
-            });
-        });
-
-
-
-    </script>
-
-
-    <div class="floating-contact-form">
-        <button class="toggle-form" onclick="toggleContactForm()">
-            <img src="email.png" alt="Email" width="50" height="50">
-        </button>
-
-        <div class="contact-form-container">
-            <h3>Contact Form</h3>
-            <form id="contact-form" onsubmit="submitContactForm(event)">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        function toggleContactForm() {
-            var formContainer = document.querySelector('.contact-form-container');
-            formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
-        }
-
-        function submitContactForm(event) {
-            event.preventDefault();
-
-            // Get the form values
-            var name = document.querySelector('input[name="name"]').value;
-            var email = document.querySelector('input[name="email"]').value;
-            var message = document.querySelector('textarea[name="message"]').value;
-
-            // Create a FormData object
-            var formData = new FormData();
-            formData.append('name', name);
-            formData.append('email', email);
-            formData.append('message', message);
-
-            // Use AJAX to send the form data to the PHP script
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'contact-form-handler.php', true);
-            xhr.onload = function () {
-                if (this.status === 200 && this.responseText.trim() == 'success') {
-                    // The email was successfully sent
-                    // Clear the form inputs
-                    document.querySelector('#contact-form').reset();
-                } else {
-                    // Something went wrong
-                    console.error('An error occurred: ' + this.responseText);
-                }
-            };
-            xhr.send(formData);
-        }
-
-    </script>
-
-
+// JavaScript for Show More functionality
+var buttons = document.getElementsByClassName(“show-more”);
+for (let button of buttons) {
+button.addEventListener(‘click’, function () {
+var longBio = this.previousElementSibling.getElementsByClassName(“long-bio”)[0];
+var shortBio = this.previousElementSibling.getElementsByClassName(“short-bio”)[0];
+if (longBio.classList.contains(‘hidden’)) {
+longBio.classList.remove(‘hidden’);
+shortBio.classList.add(‘hidden’);
+this.innerText = ‘Show less’;
+} else {
+longBio.classList.add(‘hidden’);
+shortBio.classList.remove(‘hidden’);
+this.innerText = ‘Show more’;
+}
+});
+}
+// Smooth scrolling for anchor links
+$(document).ready(function () {
+$(‘a[href^=”#”]’).on(‘click’, function (event) {
+event.preventDefault();
+var target = $(this.getAttribute(‘href’));
+if (target.length) {
+$(‘html, body’).stop().animate({
+scrollTop: target.offset().top
+}, 1000);
+}
+});
+});
+// Toggle contact form
+function toggleContactForm() {
+var formContainer = document.querySelector(’.contact-form-container’);
+formContainer.style.display = formContainer.style.display === ‘none’ ? ‘block’ : ‘none’;
+}
+// Submit contact form
+function submitContactForm(event) {
+event.preventDefault();
+var name = document.querySelector(‘input[name=“name”]’).value;
+var email = document.querySelector(‘input[name=“email”]’).value;
+var message = document.querySelector(‘textarea[name=“message”]’).value;
+var formData = new FormData();
+formData.append(‘name’, name);
+formData.append(‘email’, email);
+formData.append(‘message’, message);
+var xhr = new XMLHttpRequest();
+xhr.open(‘POST’, ‘contact-form-handler.php’, true);
+xhr.onload = function () {
+if (this.status === 200 && this.responseText.trim() == ‘success’) {
+document.querySelector(’#contact-form’).reset();
+} else {
+console.error(’An error occurred: ’ + this.responseText);
+}
+};
+xhr.send(formData);
+}
 
 
 </body>
